@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.java": "java",
+        "IFTEST.C": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "system_error": "cpp",
+        "typeinfo": "cpp"
+    },
+    "git.ignoreLimitWarning": true,
+    "cmake.configureOnOpen": true
+}
