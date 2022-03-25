@@ -12,7 +12,8 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "system_error": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "iosfwd": "cpp"
     },
     "git.ignoreLimitWarning": true,
     "cmake.configureOnOpen": true
