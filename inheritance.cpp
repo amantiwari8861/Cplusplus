@@ -43,9 +43,9 @@ int main()
     cout<<"parent name :"<<obj.name<<endl;
     cout<<"child name  :"<<obj.cname<<endl;
     obj.run();
-    cout<<obj.id;  //child
+    cout<<obj.id<<endl;  //child
     cout<<Parent::kuch_bhi;
-    //polymorphism
+    // cout<<Parent::id<<endl; //error
     return 0;
 }
 
