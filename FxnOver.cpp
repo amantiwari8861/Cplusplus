@@ -11,16 +11,31 @@ class Car
     {
         cout<<"calling fxn1(int a)"<<a<<endl;
     }
+    void fxn1(char a)
+    {
+        cout<<"calling fxn1(char a)"<<a<<endl;
+    }
     void fxn1(int b,int c)
     {
         cout<<"calling fxn1(int b,int c)"<<b<<" "<<c<<endl;   
+    }
+    void fxn1(float b,double c)
+    {
+        cout<<"calling fxn1(float b,int c)"<<b<<" "<<c<<endl;   
+    }
+    void fxn1(short b,long c)
+    {
+        cout<<"calling fxn1(short b,long c)"<<b<<" "<<c<<endl;   
     }
 };
 int main()
 {
     Car obj;
-    obj.fxn1();
-    obj.fxn1(10);
-    obj.fxn1(10,20);
+    // obj.fxn1();
+    // obj.fxn1(10);
+    // obj.fxn1('a');
+    // obj.fxn1(10,20);
+    // obj.fxn1(10.5f,20.0);
+    obj.fxn1((short)10,20l);
     return 0;
 }

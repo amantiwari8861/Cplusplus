@@ -32,6 +32,12 @@ class Child2:public Parent1
     {
         cout<<"hii i am child 2 "<<endl;
     }
+    void callParent()
+    {
+        cout<<"calling by child1 callParent fxn "<<endl;
+        Parent1::display();
+    }
+    
 };
 class SubChild: public Child1,public Child2
 {
@@ -58,8 +64,10 @@ int main()
     // sub.Parent1::display();
     // a child class can call only the immidiate parent class
     //same rule in multilevel inheritance   . ambiguity(duvidha)
-    sub.callParent();
-    sub.callBothParents();
+    // sub.callParent();
+    sub.Child1::callParent();
+     sub.Child2::callParent();
+    // sub.callBothParents();
     return 0;
 }
 
