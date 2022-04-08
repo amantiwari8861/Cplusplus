@@ -1,13 +1,17 @@
 #include <iostream>
 using namespace std;
 class Car
-{    
+{
+    private:
+    int speed;    
     public:
-    int speed;
+    int carid;
     void print()
     {
         cout << "Speed: " << speed << endl;
     }
+    protected:
+    string model;
 };
 int main()
 {

@@ -3,7 +3,7 @@ using namespace std;
   
 class A  
 {  
-    int x =5;  
+    int x =5;
     friend class B;           // friend class.  
 };  
 class B  
