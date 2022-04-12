@@ -13,7 +13,8 @@
         "stdexcept": "cpp",
         "system_error": "cpp",
         "typeinfo": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "cstring": "cpp"
     },
     "git.ignoreLimitWarning": true,
     "cmake.configureOnOpen": true
