@@ -5,6 +5,7 @@ using namespace std;
 template <typename datatype> 
 datatype myMax(datatype x, datatype y) 
 { 
+  cout<<" sizeof(datatype) = "<<sizeof(datatype)<<endl;
    return (x > y)? x: y; 
 } 
   

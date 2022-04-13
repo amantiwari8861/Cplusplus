@@ -9,6 +9,8 @@ class ClassName
 public: 
     ClassName(T x,U y) {
 		cout<<"Constructor Called\n"<<endl;
+		cout<<"sizeof(T) = "<<sizeof(T)<<endl;
+		cout<<"sizeof(U) = "<<sizeof(U)<<endl;
 		x2=x;
 		y2=y;
 		cout<<"x :"<<x2<<endl;
