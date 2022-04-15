@@ -1,32 +1,28 @@
 #include <iostream>
 #include <fstream>
-
 using namespace std;
-
-// Driver Code
 int main()
 {
     string line;
-
     // Creation of ifstream class object to read the file
     ifstream fin;
 
     // by default open mode = ios::in mode
-    fin.open("C:/Users/Aman_Tiwari/Desktop/1.txt");
+    fin.open("C:/Users/Aman_Tiwari/Desktop/clean22.bat");
 
-    // Execute a loop until EOF (End of File)
-    while (fin)
+    if(fin)
     {
-
-        // Read a Line from File
-        getline(fin, line);
-
-        // Print line in Console
-        cout << line << endl;
+        // Read a line from file
+        while(getline(fin, line))
+        {
+            // Print the line
+            cout << line << endl;
+        }
     }
-
-    // Close the file
+    else
+    {
+        cout << "File not found" << endl;
+    }
     fin.close();
-
     return 0;
 }

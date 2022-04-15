@@ -6,13 +6,14 @@ int main()
 {
     ofstream fout;
     string line;
-
+    
+    // remove("C:/Users/Aman_Tiwari/Desktop/1.txt");//to delete a file
     // by default ios::out mode, automatically deletes
+    // fout.open("C:/Users/Aman_Tiwari/Desktop/1.txt");
     // the content of file. To append the content, open in ios:app
     fout.open("C:/Users/Aman_Tiwari/Desktop/1.txt",ios::app);
-    // fout.open("C:/Users/Aman_Tiwari/Desktop/1.txt");
-
     // Execute a loop If file successfully opened
+
     while (fout)
     {
 
@@ -26,7 +27,6 @@ int main()
         // Write line in file
         fout << line << endl;
     }
-
     // Close the File
     fout.close();
 
