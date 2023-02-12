@@ -1,29 +1,29 @@
 #include <iostream>
 using namespace std;
-class B; // forward declarartion.
-class A
+class Two; // forward declarartion.
+class One
 {
-    int x;
-
-public:
-    void setdata(int i)
-    {
-        x = i;
-    }
-    friend void min(A, B); // friend function.
+    private:
+        int x;
+    public:
+        One(int num)
+        {
+            x = num;
+        }
+        friend void min(One,Two); // friend function.
 };
-class B
+class Two
 {
-    int y;
-
-public:
-    void setdata(int i)
-    {
-        y = i;
-    }
-    friend void min(A, B); // friend function
+    private:
+        int y;
+    public:
+        Two(int num2)
+        {
+            y = num2;
+        }
+        friend void min(One, Two); // friend function
 };
-void min(A a, B b)
+void min(One a, Two b)
 {
     if (a.x <= b.y)
         cout << a.x << " is minimum" << endl;
@@ -34,10 +34,8 @@ void min(A a, B b)
 }
 int main()
 {
-    A a;
-    B b;
-    a.setdata(10);
-    b.setdata(20);
+    One a(10);
+    Two b(20);
     min(a, b);
     return 0;
 }
