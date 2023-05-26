@@ -1,0 +1,24 @@
+intro
+data type
+variables
+operators
+conditional statement
+loops
+array 
+nested loops
+functions
+recursion
+structure
+pointers 
+
+OOps intro
+major pillar
+inheritance
+polymorphism
+encapsulation
+abstraction
+strings
+templates
+error handling 
+file handling 
+
