@@ -9,11 +9,16 @@ class Building
     int rooms;
     string address;
 
-    void input(int f,int r,string addr)
+    void input()
     {
-       floors=f;
-       rooms=r;
-       address=addr;
+        cout<<"Enter the Details "<<endl;
+        cout<<"Enter no. of rooms"<<endl;
+        cin>>rooms;
+        cout<<"Enter no. of floors"<<endl;
+        cin>>floors;
+        fflush(stdin);
+        cout<<"Enter no. of address"<<endl;
+        getline(cin,address);
     }
     void showDetails()
     {
@@ -26,21 +31,9 @@ class Building
 
 int main()
 {
-    int floors;
-    int rooms;
-    string address;
- 
-    cout<<"Enter the Details "<<endl;
-    cout<<"Enter no. of rooms"<<endl;
-    cin>>rooms;
-    cout<<"Enter no. of floors"<<endl;
-    cin>>floors;
-    fflush(stdin);
-    cout<<"Enter no. of address"<<endl;
-    getline(cin,address);
-
     Building b1;
-    b1.input(floors,rooms,address);
+    // b1.floors=4;
+    b1.input();
     b1.showDetails();
 
     return 0;

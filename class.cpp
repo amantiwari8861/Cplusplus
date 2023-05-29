@@ -3,22 +3,40 @@ using namespace std;
 
 class Building
 {
-	public:
-	string name="Samsung";
-	int floors=0;
-	int rooms=70;
-	void fxn()
-	{
-	cout<<"name :"<<name<<" floors :"<<floors<<" rooms : "<<rooms<<endl;
-	}
+    public:
+    int noOfRooms;
+    int floors;
+    string address;
+
+    void lift()
+    {
+        cout<<"i have lift system";
+    }
+    void swimmingPool()
+    {
+        cout<<"i have Swiming pool";
+    }
+    void showDetails()
+    {
+        cout<<"-------------Details------------"<<endl;
+        cout<<noOfRooms<<endl;
+        cout<<floors<<endl;
+        cout<<address<<endl;
+    }
 };
-int main(){
-	Building b1;
-	b1.fxn();
-	b1.floors=9;
-	cout<<b1.name<<endl;
-	cout<<b1.floors<<endl;
-	cout<<b1.rooms<<endl;
-	b1.fxn();
-	return 0;
+int main()
+{
+    Building b1;
+    b1.noOfRooms=20;
+    b1.floors=3;
+    b1.address="niit 62 noida ";
+    b1.showDetails();
+    b1.lift();
+    b1.swimmingPool();
+
+    Building b2;
+
+    return 0;
 }
+// OOPs -> software development methodology
+// Object oriented programming system
