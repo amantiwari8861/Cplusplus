@@ -25,10 +25,11 @@ public:
 int main()
 {
     Test tt;
-    ++tt;       // calling of a function "void operator ++()"
-    tt.Print(); // count is now 18
-    tt++;       // calling of a function "void operator ++()"
-    tt.Print(); // calling of a function "void operator ++(int)" for postfix
+    // ++tt;       // calling of a function "void operator ++()"
+    // tt.Print(); // count is now 18
+
+    // tt++;       // calling of a function "void operator ++()"
+    // tt.Print(); // calling of a function "void operator ++(int)" for postfix
     cout << "\n"<< "num =" << ++tt.num << endl;
     return 0;
 }

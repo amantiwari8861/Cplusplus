@@ -31,11 +31,11 @@ class Car
 int main()
 {
     Car obj;
-    // obj.fxn1();
-    // obj.fxn1(10);
-    // obj.fxn1('a');
-    // obj.fxn1(10,20);
-    // obj.fxn1(10.5f,20.0);
-    obj.fxn1((short)10,20l);
+    obj.fxn1();
+    obj.fxn1(10);
+    obj.fxn1('a');
+    obj.fxn1(10,20);
+    obj.fxn1(10.5f,20.0);
+    obj.fxn1((short)10,20L);
     return 0;
 }

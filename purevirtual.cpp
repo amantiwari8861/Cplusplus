@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-class Bank
+class Rbi
 {
-public:
+    public:
     virtual void setRateOfInterest(float) = 0;//pure virtual function
     void showMinimunRateOfInterest()
     {
@@ -11,7 +11,7 @@ public:
     }
     virtual void showRateOfInterest()=0;//pure virtual function
 };
-class SBI:public Bank
+class SBI:public Rbi
 {
     float rateOfInterest;
     public:
@@ -31,8 +31,8 @@ int main()
     s.showRateOfInterest();
     s.showMinimunRateOfInterest();
 
-    // Bank b1;//we can't create object of abstract class
-    Bank *b1;
+    // Rbi b1;//we can't create object of abstract class
+    Rbi *b1;
     b1 = &s;
     b1->setRateOfInterest(8);//here data abstraction is achieved
     b1->showRateOfInterest();

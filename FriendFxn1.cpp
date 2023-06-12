@@ -2,14 +2,14 @@
 using namespace std;
 class Box
 {
-private:
-    int length;
-public:
-    Box()
-    {
-        length = 0;
-    }
-    friend int printLength(Box); // friend function
+    private:
+        int length;
+    public:
+        Box()
+        {
+            length = 0;
+        }
+        friend int printLength(Box); // friend function
 };
 int printLength(Box b)
 {

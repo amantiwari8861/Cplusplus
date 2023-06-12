@@ -1,23 +1,32 @@
 // C++ program to demonstrate function overriding
-
 #include <iostream>
 using namespace std;
 
-class Base {
+class Base 
+{
    public:
-    virtual void print() {
+    virtual void print() 
+    {
         cout << "Base Function" << endl;
     }
+    void parentFxn(){
+        cout<<"Hello i am parent Fxn"<<endl;
+    }
 };
-
-class Derived : public Base {
+class Derived : public Base 
+{
    public:
-    void print() {
+    void print() 
+    {
         cout << "Derived Function" << endl;
+    }
+    void childFxn(){
+        cout<<"Hello i am child Fxn"<<endl;
     }
 };
 
-int main() {
+int main() 
+{
     Derived derived1;
     // derived1.print();
 
@@ -25,15 +34,19 @@ int main() {
     // derived2.Base::print();
 
     Base base;
-    base.print();
+    // base.print();
 
 
-    Base *b1;
+    Base *b1; //Base class type pointer or reference variable
     b1=&derived1;
     b1 -> print(); //Derived 
+    b1 ->parentFxn();
+    // b1->childFxn(); //error
 
-    b1=&base;
-    b1 -> print(); // Base
+    b1 -> Base::print();
+    // b1=&base;
+    // b1 -> print(); // Base
+
 /* 
     when u don't use virtual function and even though ptr points to a Derived object,
     it is actually of Base type. So, it calls the member function of Base.

@@ -9,22 +9,22 @@ class Calc
     {  
        x=i;  
     }
-    void operator+(Calc);
+    int operator+(Calc);
     void display();
 };
-void Calc :: operator+(Calc a)  
+int Calc :: operator+(Calc a)  
 {  
      cout<<"x = "<<x<<" a.x = "<<a.x<<endl;
     int m = x+a.x;  
     cout<<"The result of the addition of two objects is : "<<m<<endl;  
-  
+  return m;
 }  
 int main()  
 {  
     Calc a1(5);  
     Calc a2(4);  
     Calc a3(10);  
-    a1+a2;  
+    cout<< a1+a2<<endl;  
     a3+a2;
     return 0;  
 }  
