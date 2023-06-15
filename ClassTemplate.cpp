@@ -6,7 +6,7 @@ class ClassName
 { 
     T x2; //int x;
     U y2; //double y;
-public: 
+	public: 
     ClassName(T x,U y) {
 		cout<<"Constructor Called\n"<<endl;
 		cout<<"sizeof(T) = "<<sizeof(T)<<endl;
@@ -22,5 +22,6 @@ int main()
 { 
    ClassName<char, char> obj('h','g'); 
    ClassName<int, double> obj2(5,6.78); 
+   ClassName<int, char> obj3(5,'A'); 
    return 0; 
 }

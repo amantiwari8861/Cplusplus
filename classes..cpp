@@ -1,4 +1,0 @@
-class employee
-{
-    int empid;
-}
