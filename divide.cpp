@@ -11,6 +11,7 @@ int main()
 		if(b==0)
 		{
 			throw "divide by 0";//you have to throw exception yourself in c++ 
+			cout<<"i will not execute";
 		}
 		else
 		{
@@ -22,5 +23,6 @@ int main()
 	{
 		cout<<"default exception\n";
 	}
+	cout<<"after try catch code";
 	return 0;
 }
