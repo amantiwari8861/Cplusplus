@@ -18,7 +18,6 @@ public:
      void calculate();
      int retrollno() const;
 }; // class ends here
-
 void student::calculate()
 {
      average = (eng_marks + math_marks + sci_marks + lang2_marks + cs_marks) / 5.0;
@@ -31,7 +30,6 @@ void student::calculate()
      else
           grade = 'F';
 }
-
 void student::getdata()
 {
      cout << "\nEnter student's roll number: ";
@@ -83,7 +81,8 @@ int main()
      {
           char ch;
           int num;
-          system("cls");
+          // system("cls");
+          system("clear");
           cout << "\n\n\n\tMENU";
           cout << "\n\n\t1.Create student record";
           cout << "\n\n\t2. Search student record";
@@ -91,9 +90,10 @@ int main()
           cout << "\n\n\t4.Delete student record";
           cout << "\n\n\t5.Modify student record";
           cout << "\n\n\t6.Exit";
-          cout << "\n\nWhat is your Choice (1/2/3/4/5/6) ";
+          cout << "\n\nWhat is your Choice (1/2/3/4/5/6) :";
           cin >> ch;
-          system("cls");
+          // system("cls");
+          system("clear");
           switch (ch)
           {
           case '1':

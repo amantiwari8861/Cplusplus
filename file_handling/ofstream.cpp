@@ -9,9 +9,9 @@ int main()
     
     // remove("C:/Users/Aman_Tiwari/Desktop/1.txt");//to delete a file
     // by default ios::out mode, automatically deletes
-    // fout.open("C:/Users/Aman_Tiwari/Desktop/1.txt");
+    // fout.open("./Output.txt");
     // the content of file. To append the content, open in ios:app
-    fout.open("C:/Users/Aman_Tiwari/Desktop/1.txt",ios::app);
+    fout.open("Output.txt",ios::app);
     // Execute a loop If file successfully opened
 
     while (fout)

@@ -3,12 +3,14 @@
 using namespace std;
 int main()
 {
+    // what is file handling and why we use it ?
+    //program gets memory on RAM
     string line;
     // Creation of ifstream class object to read the file
     ifstream fin;
 
     // by default open mode = ios::in mode
-    fin.open("C:/Users/Aman_Tiwari/Desktop/clean22.bat");
+    fin.open("../C++Content.txt");
 
     if(fin)
     {
