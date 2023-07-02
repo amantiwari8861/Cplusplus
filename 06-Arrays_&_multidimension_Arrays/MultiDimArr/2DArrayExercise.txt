@@ -1,0 +1,7 @@
+1.take a matrix in fixed dimension array from user and print that
+2.find the sum of all elements in a matrix.
+3.take a matrix dimension from user and get value in that matrix and print them.
+4.count all even elements in an matrix.
+5.take 2 matrix from user and subtract them.
+6.count non-zero elements in a matrix.
+7.check whether a matrix is identity matrix or not.
