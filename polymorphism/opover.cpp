@@ -9,21 +9,20 @@ class Calc
     {  
        x=i;  
     }
-    int operator+(Calc);
+    int operator+(Calc a)
+    {  
+        // cout<<"x = "<<x<<" a.x = "<<a.x<<endl;
+        int m = x*a.x;  
+        // cout<<"The result of the addition of two objects is : "<<m<<endl;  
+        return m;
+    }  
 };
-int Calc :: operator+(Calc a)  
-{  
-    // cout<<"x = "<<x<<" a.x = "<<a.x<<endl;
-    int m = x+a.x;  
-    // cout<<"The result of the addition of two objects is : "<<m<<endl;  
-  return m;
-}  
 int main()  
 {  
     Calc a1(5);  
-    Calc a2(4);  
-    Calc a3(10);  
-    cout<< a1+a2<<endl;  
+    Calc a2(4); 
+    int sum=a1+a2; 
+    cout<<"Sum = "<<sum<<endl;  
     // cout<< a3+a2<<endl;  
     // a3+a2;
     return 0;  

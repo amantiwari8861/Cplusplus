@@ -19,17 +19,19 @@ class Test
     }
     void Print()
     {
-        cout << "The Count is: " << num << endl;
+        cout << "The Value of Num is: " << num << endl;
     }
 };
 int main()
 {
     Test tt;
+    // cout << "\n"<< "num =" << ++tt.num << endl;
+    // cout << "\n"<< "num =" << tt.num++ << endl;
+
     // ++tt;       // calling of a function "void operator ++()"
-    // tt.Print(); // count is now 18
+    // tt.Print(); // num is now 18
 
     tt++;       // calling of a function "void operator ++()"
     tt.Print(); // calling of a function "void operator ++(int)" for postfix
-    // cout << "\n"<< "num =" << ++tt.num << endl;
     return 0;
 }

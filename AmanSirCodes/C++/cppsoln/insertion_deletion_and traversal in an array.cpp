@@ -2,7 +2,7 @@
 
   #include<iostream.h>
   #include<conio.h>
-  #include<stdio.h>
+  #include<iostream> using namespace std;
 
   
   int arr[5]={2,5,7,10}; // Declaring array outside main()

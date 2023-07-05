@@ -1,4 +1,4 @@
-intro
+intro to c++
 data type
 variables
 operators
@@ -10,7 +10,7 @@ functions
 recursion
 structure
 pointers 
-
+C++_Test
 OOps intro
 major pillar
 inheritance
@@ -20,5 +20,4 @@ abstraction
 strings
 templates
 error handling 
-file handling 
-
+file handling

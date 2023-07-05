@@ -13,7 +13,7 @@
 #ifndef __OP_H
 #define __OP_H
 
-#include<stdio.h>
+#include<iostream> using namespace std;
 #include "conio.h"
 #include<string.h>
 #include<ctype.h>

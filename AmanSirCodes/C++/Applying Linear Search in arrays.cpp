@@ -1,6 +1,6 @@
 #include <iostream.h>
 #include<conio.h>
-#include<stdio.h>
+#include<iostream> using namespace std;
 void main()
 {
     int arr[20];    // Array to be searched

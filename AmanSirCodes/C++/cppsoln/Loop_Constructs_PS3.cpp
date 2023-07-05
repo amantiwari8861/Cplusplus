@@ -1,6 +1,6 @@
 // Program to convert case,
 /*function to convert a string to lower-case*/
-#include<stdio.h>
+#include<iostream> using namespace std;
 #include<iostream.h>
 #include<conio.h>
 

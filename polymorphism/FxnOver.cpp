@@ -39,3 +39,11 @@ int main()
     obj.fxn1((short)10,20L);
     return 0;
 }
+//polymorphism : 
+//      poly : many
+//      morphs : forms
+
+// static polymorphism (compile time polymorphism or early binding) 
+//      eg. function overloading,constructor overloading and operator overloading
+// dynamic polymorphism (runtime polymorphism or late binding)
+//      eg. overriding

@@ -1,6 +1,6 @@
 #include<iostream.h>
 #include<conio.h>
-#include<stdio.h>
+#include<iostream> using namespace std;
 
 class matrix
 {
