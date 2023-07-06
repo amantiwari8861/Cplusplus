@@ -23,7 +23,7 @@ int main()
     }
     else
     {
-        cout << "File not found" << endl;
+        cout << "File not found or unable to open file" << endl;
     }
     fin.close();
     return 0;

@@ -16,8 +16,8 @@ int main()
     {
 		if(b==0)
 		{
-			throw b;
-			// throw "pls do not divide by zero!";
+			// throw b;
+			throw "pls do not divide by zero!";
 		}
 		//if error throwed to catch block after throw statements these line won't be executed 
 		c=a/b;//not executed
@@ -31,7 +31,6 @@ int main()
 	{
 		cout<<msg<<endl;
 	}
-	
 	
 	
 	cout<<"hello i am after error statements "	<<endl;
