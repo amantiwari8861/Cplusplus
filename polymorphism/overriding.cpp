@@ -4,7 +4,7 @@ using namespace std;
 
 class Base 
 {
-   public:
+    public:
     virtual void print() 
     {
         cout << "Base Function" << endl;
@@ -15,7 +15,7 @@ class Base
 };
 class Derived : public Base 
 {
-   public:
+    public:
     void print() 
     {
         cout << "Derived Function" << endl;
@@ -40,7 +40,7 @@ int main()
     b1=&derived1;
     b1 -> print(); //Derived 
     b1 ->parentFxn();
-    //b1->childFxn(); //error
+    // b1->childFxn(); //error
 
     b1 -> Base::print();
     b1=&base;
