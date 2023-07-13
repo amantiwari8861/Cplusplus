@@ -9,6 +9,8 @@ int main()
     // cout<<name<<endl;
     // cout<<strlen(name)<<endl;
 
+    // string namez="Aman Tiwari";
+    // cout<<strlen(namez); //error bcz strlen is made for only character arrays(char *) 
     // char name1[]="Aman";
     // char name2[]="Tiwari";
 
@@ -28,7 +30,7 @@ int main()
     // // cin>>name;
     // getline(cin,name);
 
-    // cout<<name<<endl;
+    // // cout<<name<<endl;
     // string lname=" Tiwari";
 
     // name=name+lname;
@@ -58,6 +60,5 @@ int main()
     }
 
     cout<<name1.length();
-
     return 0;
 }

@@ -9,7 +9,7 @@ class Employee
     int property;
     public:
     int id;
-    void show()
+    void show2()
     {
         cout << "Credit Card Number: " << creditCardNumber << endl;
         cout << "Property: " << property << endl;
@@ -35,9 +35,9 @@ int main()
     // e.creditCardNumber = 667474389;
     // e.show();
     Manager m;
-    m.id = 102;
-    m.property = 30000;
     // m.creditCardNumber = 667474389;
+    // m.property = 30000;
+    m.id = 102;
     m.show();
     return 0;
 }
