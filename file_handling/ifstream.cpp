@@ -10,13 +10,18 @@ int main()
     ifstream fin;
 
     // by default open mode = ios::in mode
-    fin.open("../C++Content.txt");
+    fin.open("C:\\Users\\Aman_Tiwari\\Desktop\\applist.txt",ios::in);
 
     if(fin)
     {
         // Read a line from file
         while(getline(fin, line))
         {
+            // if (fin.eof())
+            // {
+            //     cout<<"Succesfully read the file!!"<<endl;
+            //     break;
+            // }
             // Print the line
             cout << line << endl;
         }

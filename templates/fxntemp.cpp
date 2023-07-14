@@ -1,18 +1,18 @@
 #include <iostream> 
 using namespace std; 
 // One function works for all data types.  This would work as difference
-template <typename datatype> 
 
-datatype myMax(datatype x, datatype y) 
+template <typename aman> 
+aman myMax(aman x, aman y) 
 { 
-  cout<<" sizeof(datatype) = "<<sizeof(datatype)<<endl;
+  cout<<" sizeof(aman) = "<<sizeof(aman)<<endl;
   return (x > y)? x: y; 
 }
 int main() 
 { 
   cout << myMax<int>(3, 7) << endl;  // Call myMax for int 
   cout << myMax<double>(3.56, 7.24) << endl; // call myMax for double 
-  cout << myMax<float>(3.0, 7.68) << endl; // call myMax for double 
+  cout << myMax<float>(15.0, 7.68) << endl; // call myMax for double 
   cout << myMax<char>('g', 'e') << endl;   // call myMax for char 
   return 0; 
 }

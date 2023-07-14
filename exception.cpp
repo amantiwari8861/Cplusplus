@@ -12,7 +12,7 @@ int main()
 	cout<<"enter value of a and b :\n";
     cin>>a;
     cin>>b;
-    try
+    try  //always put ur suspicious code into the try block
     {
 		if(b==0)
 		{
@@ -20,7 +20,7 @@ int main()
 			throw "pls do not divide by zero!";
 		}
 		//if error throwed to catch block after throw statements these line won't be executed 
-		c=a/b;//not executed
+		c=a/b;
 		cout<<"the divide is "<<c<<endl;//not executed
 	}
 	catch(int b)
