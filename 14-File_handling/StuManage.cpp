@@ -6,17 +6,17 @@ using namespace std;
 // the class that stores data
 class student
 {
-     int rollno;
-     char name[50];
-     int eng_marks, math_marks, sci_marks, lang2_marks, cs_marks;
-     double average;
-     char grade;
-
-public:
-     void getdata();
-     void showdata() const;
-     void calculate();
-     int retrollno() const;
+     private:
+          int rollno;
+          char name[50];
+          int eng_marks, math_marks, sci_marks, lang2_marks, cs_marks;
+          double average;
+          char grade;
+     public:
+          void getdata();
+          void showdata() const;
+          void calculate();
+          int retrollno() const;
 }; // class ends here
 void student::calculate()
 {
@@ -35,7 +35,7 @@ void student::getdata()
      cout << "\nEnter student's roll number: ";
      cin >> rollno;
      cout << "\n\nEnter student name: ";
-     cin.ignore();
+     cin.ignore(); //similar as fflush(stdin);
      cin.getline(name, 50);
      cout << "\nAll marks should be out of 100";
      cout << "\nEnter marks in English: ";
@@ -62,7 +62,7 @@ void student::showdata() const
      cout << "\nAverage Marks :" << average;
      cout << "\nGrade of student is :" << grade;
 }
-int student::retrollno() const
+int student::retrollno() const //getter
 {
      return rollno;
 }
@@ -81,8 +81,8 @@ int main()
      {
           char ch;
           int num;
-          // system("cls");
-          system("clear");
+          system("cls");//for windows
+          // system("clear");//for unix based system
           cout << "\n\n\n\tMENU";
           cout << "\n\n\t1.Create student record";
           cout << "\n\n\t2. Search student record";
@@ -92,8 +92,8 @@ int main()
           cout << "\n\n\t6.Exit";
           cout << "\n\nWhat is your Choice (1/2/3/4/5/6) :";
           cin >> ch;
-          // system("cls");
-          system("clear");
+          system("cls");
+          // system("clear");
           switch (ch)
           {
           case '1':
@@ -135,25 +135,26 @@ void create_student()
      oFile.close();
      cout << "\n\nStudent record Has Been Created ";
      cin.ignore();
-     cin.get();
+     cout<<"Press Any key to continue!! ";
+     cin.get();//takes a character from user
 }
 // read file records
 void display_all()
 {
-     student stud;
+     student tempStu;
      ifstream inFile;
-     inFile.open("student.dat", ios::binary);
+     inFile.open("student.dat", ios::binary | ios::in);
      if (!inFile)
      {
-          cout << "File could not be opened !! Press any Key to exit";
+          cout << "Records in File Doesn't exist !! Press any Key to continue..";
           cin.ignore();
           cin.get();
           return;
      }
      cout << "\n\n\n\t\tDISPLAYING ALL RECORDS\n\n";
-     while (inFile.read(reinterpret_cast<char *>(&stud), sizeof(student)))
+     while (inFile.read(reinterpret_cast<char *>(&tempStu), sizeof(student)))
      {
-          stud.showdata();
+          tempStu.showdata();
           cout << "\n\n====================================\n";
      }
      inFile.close();
@@ -161,14 +162,14 @@ void display_all()
      cin.get();
 }
 // read specific record based on roll number
-void display_sp(int n)
+void display_sp(int rollno)
 {
      student stud;
      ifstream iFile;
      iFile.open("student.dat", ios::binary);
      if (!iFile)
      {
-          cout << "File could not be opened... Press any Key to exit";
+          cout << "Records or file doesn't exist!! Press any Key to continue...";
           cin.ignore();
           cin.get();
           return;
@@ -176,7 +177,7 @@ void display_sp(int n)
      bool flag = false;
      while (iFile.read(reinterpret_cast<char *>(&stud), sizeof(student)))
      {
-          if (stud.retrollno() == n)
+          if (stud.retrollno() == rollno)
           {
                stud.showdata();
                flag = true;
@@ -225,8 +226,9 @@ void change_student(int n)
      cin.get();
 }
 // delete record with particular roll number
-void delete_student(int n)
+void delete_student(int rollno)
 {
+     bool found=false;
      student stud;
      ifstream iFile;
      iFile.open("student.dat", ios::binary);
@@ -242,16 +244,24 @@ void delete_student(int n)
      iFile.seekg(0, ios::beg);
      while (iFile.read(reinterpret_cast<char *>(&stud), sizeof(student)))
      {
-          if (stud.retrollno() != n)
+          if (stud.retrollno() != rollno)
           {
                oFile.write(reinterpret_cast<char *>(&stud), sizeof(student));
+          }
+          if(stud.retrollno() == rollno)
+          {
+               found=true;
           }
      }
      oFile.close();
      iFile.close();
      remove("student.dat");
      rename("Temp.dat", "student.dat");
-     cout << "\n\n\tRecord Deleted ..";
+     if(found==true)
+          cout << "\n\n\tRecord Deleted .."<<endl;
+     else
+          cout<<"Record doesn't exist "<<endl;
+
      cin.ignore();
      cin.get();
 }
