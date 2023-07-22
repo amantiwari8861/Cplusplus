@@ -9,6 +9,7 @@ class Employee
     int property;
     public:
     int id;
+    Employee(){creditCardNumber=0;property=0;}
     void show2()
     {
         cout << "Credit Card Number: " << creditCardNumber << endl;
@@ -33,10 +34,10 @@ int main()
     // e.id = 101;
     // e.property = 20000;
     // e.creditCardNumber = 667474389;
-    // e.show();
+    // e.show2();
     Manager m;
     // m.creditCardNumber = 667474389;
-    // m.property = 30000;
+    // m.property = 30000;//main is not child of Employee
     m.id = 102;
     m.show();
     return 0;
