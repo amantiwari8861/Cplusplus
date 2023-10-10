@@ -10,7 +10,7 @@ int main()
     ifstream fin;
 
     // by default open mode = ios::in mode
-    fin.open("C:\\Users\\Aman_Tiwari\\Desktop\\applist.txt",ios::in);
+    fin.open("C:\\Users\\Aman_Tiwari\\Desktop\\hello.txt",ios::in);
 
     if(fin)
     {

@@ -45,9 +45,9 @@ int main()
     // s.showMinimunRateOfInterest();
     PNB p;
 
-    Rbi *rbi;
-    rbi = &s;
-    // rbi = &p;
+    Rbi *rbi=NULL;
+    // rbi = &s;
+    rbi = &p;
     rbi->setRateOfInterest(8);//here data abstraction is achieved
     rbi->showRateOfInterest();
     // rbi->showMinimunRateOfInterest();

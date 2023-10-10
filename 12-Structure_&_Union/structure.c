@@ -19,10 +19,10 @@ int main()
     printf("Student 2:the id is %d and name is %s and fees is %f marks %lf\n",stu2.id,stu2.name,stu2.fees,stu2.marks);
     
     // stu1.id=102;//pre-defined
-    // stu1.name="AMan"; //it will give error
-    // stu1.name={"AMan"}; //it will give error
-    // stu1.name[]={"AMan"}; //it will give error
-    // strcpy(stu1.name,"Aman");//pre-defined
+    stu1.name="AMan"; //it will give error
+    stu1.name={"AMan"}; //it will give error
+    stu1.name[]={"AMan"}; //it will give error
+    strcpy(stu1.name,"Aman");//pre-defined
     // stu1.fees=5000.50;;
     // stu1.marks=85;
     printf("Enter the id:\n");

@@ -30,7 +30,8 @@ int main()
     // cout<<y<<endl;
     // cout<<z<<endl;
 
-    // cout<<sizeof(long int)<<" Bytes"<<endl;
+    // cout<<sizeof( long int)<<" Bytes"<<endl;
+    // cout<<sizeof(long long int)<<" Bytes"<<endl;
 
     // signed long int x=(long int)(9223372037*pow(10,9))-1;
     // long int y = (long int)(9223372037*pow(10,9))-1;
@@ -41,10 +42,11 @@ int main()
     // cout<<z<<endl;
 
     // cout<<sizeof(double)<<" Bytes"<<endl;
-    // // double xy=1.7*pow(10,308);
+    // double xy=1.7*pow(10,308);
     // double xy=4.65748433378568;
     // cout<<" xy = "<<xy<<endl;
     // cout<<sizeof(long double)<<" Bytes"<<endl;
+    
     // cout<<sizeof(bool)<<" Bytes"<<endl;
 
     // bool isAlive=true;

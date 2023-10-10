@@ -3,7 +3,7 @@ using namespace std;
 
 class Mammals
 {
-    float weight=98;
+    float weight=300;
     public:
     string bloodType;
     string reproduceMethod;

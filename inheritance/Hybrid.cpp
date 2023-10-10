@@ -6,7 +6,7 @@ class Cat
     public:
     int legs;
     bool isTailAvailable;
-    Cats()
+    Cat()
     {
         legs=4;
         isTailAvailable=true;
@@ -64,6 +64,11 @@ class Liger:public Lion,public Tiger
 int main()
 {
     Liger l;
-    
+    l.showLionProperty();
+    l.showTigerProperty();
+    l.showLigerProperty();
+    l.Lion::showCatProperty();
+    l.Tiger::showCatProperty();
+    l.Cat::showCatProperty();//ambiguity problem
     return 0;
 }

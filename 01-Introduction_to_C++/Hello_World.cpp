@@ -1,4 +1,5 @@
-#include<iostream> using namespace std; 
+#include<iostream> 
+using namespace std; 
 //standard input output header file (pre-processor directives)
 //directives -> folder
 int main()  //starting point of a program
