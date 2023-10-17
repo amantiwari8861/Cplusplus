@@ -10,7 +10,10 @@ class Person
 
     void setAge(int a)//setter/mutator
     {
-        age = a;
+        if (a>1 && a<=200)// mutator validation
+        {
+            age = a;   
+        }
     }
     int getAge()//getter/accessor
     {
@@ -24,10 +27,13 @@ class Person
     {
         return height;
     }
+
 };
 int main()
 {
+
     Person aman;
+    // cout<<aman.age;
     aman.setAge(24);
     aman.setHeight(5.6);
     cout << "Age: " << aman.getAge() << endl;

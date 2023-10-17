@@ -18,3 +18,5 @@ class stringLite
         cout<<"msg: "<<msg<<endl;
     }
 };
+
+stringLite s4("vikash");

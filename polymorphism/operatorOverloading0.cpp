@@ -6,7 +6,7 @@ int main()
     string fname="Aman";
     string lname=" Tiwari";
 
-    string fullname=fname+lname;
+    string fullname=fname+lname+" singh";
 
     cout<<fullname;
 

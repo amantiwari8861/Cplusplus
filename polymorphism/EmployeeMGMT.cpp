@@ -8,9 +8,9 @@ class Employee
 
     virtual void calculateSalary(float hours)
     {
-        salary=50*hours;
+        salary=50*hours*30;
     }
-    void showDetails()
+    void showSalaryDetails()
     {
         cout<<"Employee Salary is "<<salary<<endl;
     }
@@ -20,7 +20,11 @@ class Intern:public Employee
     public:
     void calculateSalary(float hours)
     {
-        salary=100*hours;
+        salary=30*hours*30;
+    }
+    void getTravelAllowance()
+    {
+        cout<<"we are getting 3000 travel allowance \n";
     }
 };
 class PermanentEmployee:public Employee
@@ -28,7 +32,11 @@ class PermanentEmployee:public Employee
     public:
     void calculateSalary(float hours)
     {
-        salary=200*hours;
+        salary=200*hours*30;
+    }
+    void getHealthInsurance()
+    {
+        cout<<"we are getting health insurance of 5Lac. \n";
     }
 };
 int main()
@@ -60,6 +68,7 @@ int main()
         emp=&e;
     }
     emp->calculateSalary(hours);
-    emp->showDetails();
+    emp->showSalaryDetails();
+    // emp->getTravelAllowance(); //parent type (Employee)  reference variable can't access child non overridden data
     return 0;
 }

@@ -20,7 +20,7 @@ int main()
 {
     bike b1;
     // cout<<b1.num;
-    // b1.setnum(500);
+    b1.setnum(500);
 
     b1.display();
     return 0;

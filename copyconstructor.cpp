@@ -10,15 +10,20 @@ class CopyDemo
             a = x;
             b = y;
         }
-        CopyDemo(const CopyDemo &obj)
+        CopyDemo(const CopyDemo &obj) //copy constructor
         {
             a = obj.a; //setting local variable to the value of the global variable
             b = obj.b;
+            // obj.a=99;
         }
         void display()
         {
             cout<<"a = "<<a<<endl;
             cout<<"b = "<<b<<endl;
+        }
+        ~CopyDemo()
+        {
+            cout<<"hii i am deconstructor "<<endl;
         }
 };
 int main()
@@ -30,5 +35,7 @@ int main()
     CopyDemo obj2(obj1);    // Copy Constructor is called
     cout<<"in object 2"<<endl;
     obj2.display();
+
+    obj1.display();
     return 0;
 }
