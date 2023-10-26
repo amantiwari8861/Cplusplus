@@ -19,5 +19,6 @@ encapsulation
 abstraction
 strings
 templates
-error handling 
+error(exception) handling 
 file handling
+basic stl

@@ -10,18 +10,18 @@ int main()
     ifstream fin;
 
     // by default open mode = ios::in mode
-    fin.open("C:\\Users\\Aman_Tiwari\\Desktop\\hello.txt",ios::in);
+    fin.open("C:\\Users\\admin\\Desktop\\Note.txt",ios::in);
 
     if(fin)
     {
         // Read a line from file
         while(getline(fin, line))
         {
-            // if (fin.eof())
-            // {
-            //     cout<<"Succesfully read the file!!"<<endl;
-            //     break;
-            // }
+            if (fin.eof())
+            {
+                cout<<"Succesfully read the file!!"<<endl;
+                break;
+            }
             // Print the line
             cout << line << endl;
         }

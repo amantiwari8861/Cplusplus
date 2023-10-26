@@ -5,7 +5,7 @@ using namespace std;
 template <typename aman> 
 aman myMax(aman x, aman y) 
 { 
-  cout<<" sizeof(aman) = "<<sizeof(aman)<<endl;
+  cout<<" sizeof(aman) = "<<sizeof(aman)<<" byte"<<endl;
   return (x > y)? x: y; 
 }
 int main() 

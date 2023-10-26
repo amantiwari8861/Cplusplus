@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Rbi
+class Rbi //incomplete class
 {
     public:
     float rateOfInterest;
@@ -24,8 +24,10 @@ class SBI:public Rbi
         cout<<"the rate of interest is "<<rateOfInterest<<"% P.A in SBI"<<endl;
     }
 };
+
 class PNB:public Rbi
 {
+    public:
     void setRateOfInterest(float r)
     {
         rateOfInterest=r;
@@ -43,6 +45,7 @@ int main()
     // s.setRateOfInterest(10);//passing the value to the pure virtual function body
     // s.showRateOfInterest();
     // s.showMinimunRateOfInterest();
+
     PNB p;
 
     Rbi *rbi=NULL;
@@ -50,7 +53,7 @@ int main()
     rbi = &p;
     rbi->setRateOfInterest(8);//here data abstraction is achieved
     rbi->showRateOfInterest();
-    // rbi->showMinimunRateOfInterest();
+    rbi->showMinimunRateOfInterest();
 
     return 0;
 }
