@@ -13,21 +13,23 @@ class Mammals
         reproduceMethod="Birth";
         cout<<"Mammal Created"<<endl;
     }
-    void showDetails()
+    void showMammalsProperty()
     {
         cout<<" =========== Mammal Details =========="<<endl;
         cout<<" Blood Type :"<<bloodType<<endl;
         cout<<" Reproduce Process :"<<reproduceMethod<<endl;
     }
 };
+
+
 class Humans :public Mammals
 {
     public:
     int legs;
     Humans()
     {
-        cout<<"Human Created"<<endl;
         legs=2;
+        cout<<"Human Created"<<endl;
     }
     void showHumanProperty()
     {
@@ -38,10 +40,10 @@ class Humans :public Mammals
 int main()
 {
     
-    Humans women;
-    women.showDetails();
-    women.showHumanProperty();
-    // cout<<women.bloodType<<endl;
-    // cout<<women.weight<<endl;
+    Humans men;
+    men.showMammalsProperty();
+    men.showHumanProperty();
+    // cout<<men.bloodType<<endl;
+    // cout<<men.weight<<endl;
     return 0;
 }

@@ -1,18 +1,19 @@
-#include<iostream> using namespace std;
+#include<iostream> 
+using namespace std;
 void add(int,int);
 // void add(int a,int num2); //also valid
 //type 2 fxn : with argument no return type
 int main()
 {
     int a=10,b=20;
-    printf("before calling in main \n");
+    cout<<"before calling in main \n";
     add(a,b);
-    // printf(" sum = %d \n",sum); //error sum undeclared
-    printf("after calling in main \n");
+    // cout<<" sum = "<<sum<<" \n"; //error sum undeclared
+    cout<<"after calling in main \n";
     return 0;
 }
 void add(int a,int num2)//variable name may be same or different
 {
     int sum=a+num2;
-    printf("the sum is %d in add fxn \n",sum);
+    cout<<"the sum is "<<sum<<" in add fxn \n";    
 }

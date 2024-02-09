@@ -67,8 +67,10 @@ int main()
     l.showLionProperty();
     l.showTigerProperty();
     l.showLigerProperty();
-    l.Lion::showCatProperty();
-    l.Tiger::showCatProperty();
-    l.Cat::showCatProperty();//ambiguity problem
+    // l.showCatProperty();//error
+
+    // l.Lion::showCatProperty();
+    // l.Tiger::showCatProperty();
+    l.Cat::showCatProperty();
     return 0;
 }

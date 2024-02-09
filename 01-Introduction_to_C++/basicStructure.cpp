@@ -1,10 +1,9 @@
 #include<iostream> 
-#include<conio.h>
 using namespace std;
+
 int main()
 {
 	// std::cout<<"hello world"; 
-	cout<<"Hello World!!\a";
-	getch();
+	cout<<"Hello World!!";
 	return 0;
 }

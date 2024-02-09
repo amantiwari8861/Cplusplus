@@ -31,7 +31,6 @@ int main()
         else if (sentence[i]>=97 && sentence[i]<=122)
         {
             smallApl++;
-
         }
         else if (sentence[i]>=48 && sentence[i]<=57)
         {

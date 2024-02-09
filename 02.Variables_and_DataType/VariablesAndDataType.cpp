@@ -1,10 +1,11 @@
 #include<iostream>
+#include<iomanip>
 #include<math.h>
 using namespace std;
 
 int main()
 {
-    // byte b=(byte)255;//only in new version
+    // byte b=255;//only in new version i.e ()
     // cout<<"The value of b is "<<(int)b<<" and size in memory is "<<sizeof(b)<<" bytes."<<endl;
 
     // 1 byte = 8 bits
@@ -22,14 +23,13 @@ int main()
     // cout<<b<<endl;
     // cout<<c<<endl;
 
-    // signed int x=2147483647;
     // int y = 2147483647;
-    // unsigned int z=4294967295;
+    // signed int x=2147483647;// -2^31 to to 2^31 -1
+    // unsigned int z=4294967295;// 2^32 - 1
 
     // cout<<x<<endl;
     // cout<<y<<endl;
     // cout<<z<<endl;
-
     // cout<<sizeof( long int)<<" Bytes"<<endl;
     // cout<<sizeof(long long int)<<" Bytes"<<endl;
 
@@ -43,6 +43,7 @@ int main()
 
     // cout<<sizeof(double)<<" Bytes"<<endl;
     // double xy=1.7*pow(10,308);
+    // cout<<setprecision(16);
     // double xy=4.65748433378568;
     // cout<<" xy = "<<xy<<endl;
     // cout<<sizeof(long double)<<" Bytes"<<endl;
@@ -53,7 +54,9 @@ int main()
     // cout<<" is Alive :"<<isAlive<<endl;
 
     string name,name2="Aman Tiwari";
-    cin>>name;
+    cout<<"enter ur name:";
+    // cin>>name; // one word
+    getline(cin,name);
 
     cout<<"my name is "<<name<<endl;
     cout<<"my name is "<<name2<<endl;

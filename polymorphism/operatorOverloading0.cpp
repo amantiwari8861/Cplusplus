@@ -10,6 +10,5 @@ int main()
 
     cout<<fullname;
 
-
     return 0;
 }

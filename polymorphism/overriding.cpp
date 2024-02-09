@@ -37,12 +37,12 @@ int main()
     // derived2.Base::print();
     
     Base *b1; //Base class type pointer or reference variable
-    b1=&derived1;
-    b1 -> print(); //Derived 
-    b1 ->parentFxn();
-    // b1->childFxn(); //error
+    // b1=&derived1;
+    // b1 -> print(); //Derived 
+    // b1 ->parentFxn();
+    // // b1->childFxn(); //error
 
-    b1 -> Base::print();
+    // b1 -> Base::print();
     b1=&base;
     b1 -> print(); // Base
 

@@ -29,6 +29,10 @@ class Women
             cout<<"Still not satisfied"<<endl;
         }
     }
+    void doSomething(float per,string name)
+    {
+        cout<<name<<" got "<<per<<" percentage\n";
+    }
     //to achieve overloading the no. of parameters or the data type of parameters must be different
 };
 int main()
@@ -38,6 +42,7 @@ int main()
     women.doSomething(500);
     women.doSomething(95.0f);
     women.doSomething(100.0F);
+    women.doSomething(98.5,"khushi");
 
     return 0;
 }

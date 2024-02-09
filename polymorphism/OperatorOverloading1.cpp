@@ -6,10 +6,11 @@ class Calc
     public:  
     Calc(){}  
     Calc(int i)  {  x=i;  }
-    int operator+(Calc a)
+    
+    int operator+(Calc obj)
     {  
-        cout<<"x = "<<x<<" a.x = "<<a.x<<endl;
-        int m = x*a.x;  
+        cout<<"x = "<<x<<" obj.x = "<<obj.x<<endl;
+        int m = x*obj.x;  
         // cout<<"The result of the addition of two objects is : "<<m<<endl;  
         return m;
     }  
@@ -20,7 +21,7 @@ int main()
     Calc a2(4); 
     int sum=a1+a2; 
     cout<<"Sum = "<<sum<<endl;  
-    cout<< a3+a2<<endl;  
+    // cout<< a3+a2<<endl;  
     // a3+a2;
     return 0;  
 }  

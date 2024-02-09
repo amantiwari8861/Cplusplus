@@ -7,8 +7,8 @@ int main()
     // int result=pow(2,6);    
     // cout<<result;
 
-    cout<<num<<endl;
-    greet();
+    // cout<<num<<endl;
+    // greet();
 
     stringLite sl;
     sl.showMsg();
@@ -19,7 +19,7 @@ int main()
     string s3("Aman");
     cout<<s3<<endl;
 
+    // s4.showMsg();
 
-    s4.showMsg();
     return 0;
 }

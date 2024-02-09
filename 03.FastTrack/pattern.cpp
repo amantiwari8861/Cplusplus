@@ -12,8 +12,7 @@ int main()
         for (int sp = height-1; sp > i; sp--)
         {
            cout<<" ";
-        }
-        
+        }        
         for (int j = 0; j <= i; j++)
         {
          cout<<"* ";   
