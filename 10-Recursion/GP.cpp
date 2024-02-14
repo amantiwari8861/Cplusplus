@@ -4,9 +4,10 @@
 //     a = First term
 //     r = common ratio
 //     ar^n-1 = nth term
-//      2 6 18 . . 
+//     2 4 6 . . ..  
 
-#include<iostream> using namespace std;
+#include<iostream> 
+using namespace std;
 #include<math.h>
 void printGP(float i,float a,float r,float n)
 {
