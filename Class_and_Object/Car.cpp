@@ -40,12 +40,13 @@ class Car
 int main()
 {
     Car obj;
-    obj.getCarDetails();
-    // obj.modelNo="Buggati veyron";
-    // obj.brand="Buggati";
-    // obj.color="Black";
-    // obj.price=10005600.5;
-    // obj.enginePower=900;
+    // obj.showdetails();
+    // obj.getCarDetails();
+    obj.modelNo="Buggati veyron";
+    obj.brand="Buggati";
+    obj.color="Black";
+    obj.price=10005600.5;
+    obj.enginePower=900;
 
     // cout<<"model No :"<<obj.modelNo<<endl;
     // cout<<"Color :"<<obj.color<<endl;
