@@ -27,7 +27,6 @@ int main()
         cout<<"Enter student gender :";
         cin>>stuArr[i].gender;
     }
-
     cout<<" All student Details \n";
     for (int i = 0; i < 3; i++)
     {

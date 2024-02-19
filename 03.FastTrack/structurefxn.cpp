@@ -1,43 +1,40 @@
-#include<iostream>
-#include<cstring>
+#include <iostream>
+#include <cstring>
 using namespace std;
-
-    class Books
+class Books
+{
+    // private:
+    char name[30];
+    public:
+    int id;
+    float price;
+    
+    void getAuthorDetails()
     {
-        public:
-        int id;
-        char name[30];
-        float price;
-
-        void getAuthorDetails()
-        {
-            cout<<"yashwant kanetkar"<<endl;
-        }
-    };
-
+        cout<<"yashwant kanetkar"<<endl;
+    }
+};
 int main()
 {
-
     // struct Books
     // {
-    //     char name[20];
     //     int id;
+    //     char name[20];
     //     float price;
+    //     void getAuthorDetails()
+    //     {
+    //         cout << "yashwant kanetkar" << endl;
+    //     }
     // };
-    
-    Books b;
-    b.id=56;
-    b.getAuthorDetails();
-    // strcpy(b.name,"let us c");
-    // b.price=500;
 
-    cout<<b.id<<endl;
+    Books b;
+    b.id = 56;
+    b.price=500;
+    strcpy(b.name,"let us c");
+    b.getAuthorDetails();
+
+    cout << b.id << endl;
     // cout<<b.name<<endl;
     // cout<<b.price<<endl;
-
-
-
-
-
     return 0;
 }
