@@ -8,7 +8,7 @@ class Books
     public:
     int id;
     float price;
-    
+
     void getAuthorDetails()
     {
         cout<<"yashwant kanetkar"<<endl;
@@ -36,5 +36,10 @@ int main()
     cout << b.id << endl;
     // cout<<b.name<<endl;
     // cout<<b.price<<endl;
+
+    public static void main()
+    {
+    }
+
     return 0;
 }
