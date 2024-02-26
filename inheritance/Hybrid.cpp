@@ -23,6 +23,7 @@ class Lion:public Cat
 {
     public:
     bool isKing;
+    string foodType="omnivores";
     Lion()
     {
         isKing=true;
@@ -36,6 +37,7 @@ class Lion:public Cat
 class Tiger :public Cat
 {
     public:
+    string foodType="omnivores";
     bool isIntelligent;
     Tiger()
     {
@@ -59,6 +61,7 @@ class Liger:public Lion,public Tiger
     {
         cout<<"  Liger's Property "<<endl;
         cout<<" Can Reproduce ? "<<canReproduce<<endl;
+        // cout<<" Food Type : "<<foodType<<endl;
     }
 };
 int main()
@@ -69,8 +72,8 @@ int main()
     l.showLigerProperty();
     // l.showCatProperty();//error
 
-    // l.Lion::showCatProperty();
-    // l.Tiger::showCatProperty();
-    l.Cat::showCatProperty();
+    l.Lion::showCatProperty();
+    l.Tiger::showCatProperty();
+    // l.Cat::showCatProperty();
     return 0;
 }

@@ -20,8 +20,6 @@ class Mammals
         cout<<" Reproduce Process :"<<reproduceMethod<<endl;
     }
 };
-
-
 class Humans :public Mammals
 {
     public:
@@ -43,7 +41,7 @@ int main()
     Humans men;
     men.showMammalsProperty();
     men.showHumanProperty();
-    // cout<<men.bloodType<<endl;
-    // cout<<men.weight<<endl;
+    cout<<men.bloodType<<endl;
+    cout<<men.weight<<endl;
     return 0;
 }

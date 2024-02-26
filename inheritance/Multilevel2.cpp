@@ -35,7 +35,6 @@ class Cats :public Mammals
         cout<<"==========Cat Details========"<<endl;
         cout<<"Legs :"<<legs<<endl;
         cout<<"Is tail Available  :"<<isTailAvailable<<endl;
-
     }
 };
 class Leopard:public Cats
@@ -55,9 +54,13 @@ class Leopard:public Cats
 };
 int main()
 {
-    Leopard simba;
-    simba.showMammalProperty();
-    simba.showCatProperty();
-    simba.showLeopardProperty();
+    Leopard liala;
+    liala.legs=3;
+    liala.showMammalProperty();
+    liala.showCatProperty();
+    liala.showLeopardProperty();
+
+    // Leopard lList[10];
+    // lList[0].showCatProperty();
     return 0;
 }

@@ -18,9 +18,11 @@ class AquaticAnimal
 {
     public:
     string habitat;
+    string breatheOrgan;
     AquaticAnimal()
     {
         habitat="water";
+        breatheOrgan="skin or gills";
     }
     void showAquaticAnimProperty()
     {
@@ -30,21 +32,27 @@ class AquaticAnimal
 class Amphibians:public TerrestialAnimal,public AquaticAnimal
 {
     public:
-    string respiratoryOrgan;
+    // string breatheOrgan;
+    string habitat;
     Amphibians()
     {
-        respiratoryOrgan="lungs or Skin or gills";
+        // breatheOrgan="lungs or Skin or gills";
+        habitat="land and water";
     }
     void showAmphibiansProp()
     {
-        cout<<" Respiratory organ is "<<respiratoryOrgan;
+        // cout<<" Respiratory organ is "<<breatheOrgan<<endl;
+        cout<<" Habitat is "<<habitat<<endl;
     }
 };
 int main()
 {
-    Amphibians croc;
-    croc.showTerrestialRespiratoryOrgan();
-    croc.showAquaticAnimProperty();
-    croc.showAmphibiansProp();
+    Amphibians frog;
+    // frog.showTerrestialRespiratoryOrgan();
+    // frog.showAquaticAnimProperty();
+    frog.showAmphibiansProp();
+    // cout<<frog.breatheOrgan; //ambiguity
+
+
     return 0;
 }
