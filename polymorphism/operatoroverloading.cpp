@@ -9,11 +9,11 @@ class Test
     {
         num = 8;
     }
-    void operator++()//prefix
+    void operator++()//prefix or pre-increment
     {
         num = num + 10;
     }
-    void operator++(int) //postfix
+    void operator++(int) //postfix or post-increment
     {
         num = num + 5;
     }

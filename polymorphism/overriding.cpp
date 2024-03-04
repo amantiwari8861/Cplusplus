@@ -28,23 +28,26 @@ class Derived : public Base
 int main() 
 {
     Base base;
+    // base.parentFxn();
     // base.print();
 
     Derived derived1;
+    // derived1.childFxn();
     // derived1.print();
 
     // Derived derived2;
     // derived2.Base::print();
     
     Base *b1; //Base class type pointer or reference variable
-    // b1=&derived1;
-    // b1 -> print(); //Derived 
-    // b1 ->parentFxn();
-    // // b1->childFxn(); //error
-
     // b1 -> Base::print();
-    b1=&base;
-    b1 -> print(); // Base
+    // b1=&base;
+    // b1 -> print(); // Base
+
+    b1=&derived1;
+    b1 -> print(); //Derived 
+    b1 -> parentFxn();
+    b1 -> childFxn(); //error
+
 
 /* 
     when u don't use virtual function and even though ptr points to a Derived object,

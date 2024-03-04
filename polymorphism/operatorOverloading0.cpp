@@ -10,5 +10,7 @@ int main()
 
     cout<<fullname;
 
+    // cout<<'A'+'C';
+
     return 0;
 }

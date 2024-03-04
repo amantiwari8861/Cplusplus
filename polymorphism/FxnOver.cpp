@@ -3,10 +3,15 @@ using namespace std;
 class Car
 {
     public:
+    // to achieve overloading the no. of arguments and the data type of arguments must be different
     void fxn1()
     {
         cout<<"calling fxn1"<<endl;
     }
+    // void fxn1() //error
+    // {
+    //     cout<<"calling fxn1"<<endl;
+    // }
     void fxn1(int a)
     {
         cout<<"calling fxn1(int a)"<<a<<endl;

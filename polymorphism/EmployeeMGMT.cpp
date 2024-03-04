@@ -69,6 +69,6 @@ int main()
     }
     emp->calculateSalary(hours);
     emp->showSalaryDetails();
-    // emp->getTravelAllowance(); //parent type (Employee)  reference variable can't access child non overridden data
+    emp->getTravelAllowance(); //parent type (Employee)  reference variable can't access child non overridden data
     return 0;
 }
