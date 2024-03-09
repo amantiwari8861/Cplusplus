@@ -35,10 +35,10 @@ int main()
     // e.property = 20000;
     // e.creditCardNumber = 667474389;
     // e.show2();
-    Manager m;
+    // Manager m;
     // m.creditCardNumber = 667474389;
     // m.property = 30000;//main is not child of Employee
-    m.id = 102;
-    m.show();
+    // m.id = 102;
+    // m.show();
     return 0;
 }

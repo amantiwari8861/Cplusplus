@@ -34,7 +34,7 @@ int main()
 
     Person aman;
     // cout<<aman.age;
-    aman.setAge(24);
+    aman.setAge(25);
     aman.setHeight(5.6);
     cout << "Age: " << aman.getAge() << endl;
     cout << "Height: " << aman.getHeight() << endl;

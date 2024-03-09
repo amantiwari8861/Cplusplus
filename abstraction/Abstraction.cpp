@@ -6,8 +6,8 @@ class Employee
     public:
     float hours;
     double salary;
-    virtual void calculateSalary(float hours)=0;
-    virtual void showSalaryDetails()=0;
+    virtual void calculateSalary(float hours)=0; //pure virtual function
+    virtual void showSalaryDetails()=0; //pure virtual function
 };
 class Intern:public Employee
 {
@@ -24,9 +24,9 @@ class Intern:public Employee
     void showSalaryDetails()
     {
         cout<<"\tThe salary details of intern \n";
-        cout<<"Amount of "<<hours<<" Hours "<<30*hours<<endl;
+        cout<<"Amount of "<<hours<<" Hours per day "<<30*hours<<endl;
         cout<<"Salary Per Month "<<salary<<endl;
-        cout<<"Also getting Travel Allowance of 3k\n";
+        getTravelAllowance();
     }
 };
 class PermanentEmployee:public Employee
@@ -34,7 +34,7 @@ class PermanentEmployee:public Employee
     public:
     void calculateSalary(float hours)
     {
-        this->hours=hours;
+        this->hours=hours;// this->hours represents global
         salary=200*hours*30;
     }
     void getHealthInsurance()
@@ -43,20 +43,21 @@ class PermanentEmployee:public Employee
     }
     void showSalaryDetails()
     {
-        cout<<"\tThe salary details of intern \n";
-        cout<<"Amount of "<<hours<<" Hours "<<30*hours<<endl;
+        cout<<"\tThe salary details of Permanent Employee \n";
+        cout<<"Amount of "<<hours<<" Hours per day"<<200*hours<<endl;
         cout<<"Salary Per Month "<<salary<<endl;
-        cout<<"Also getting Health insurance of 5Lac.\n";
+        getHealthInsurance();
     }
 };
+
 int main()
 {
+    // Employee emp1; //we can't instantiate abstract type
+
     string degn;
     float hours;
     cout<<"Which type of employee u r :";
     getline(cin,degn);
-    cout<<"how many Hours u worked :";
-    cin>>hours;
 
     Employee *emp;
     if(degn=="intern")
@@ -72,8 +73,12 @@ int main()
     else
     {
         cout<<"Emloyee designation not defined in system \n";
+        // return 0;
+        exit(0);
     }
     
+    cout<<"how many Hours u worked :";
+    cin>>hours;
     emp->calculateSalary(hours);
     emp->showSalaryDetails();
     // emp->getTravelAllowance(); //parent type (Employee)  reference variable can't access child non overridden data

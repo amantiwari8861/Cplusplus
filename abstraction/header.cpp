@@ -17,6 +17,10 @@ class stringLite
     {
         cout<<"msg: "<<msg<<endl;
     }
+    string to_string() const
+    {
+        return "the msg is :"+msg;
+    }
 };
 
 stringLite s4("vikash");
