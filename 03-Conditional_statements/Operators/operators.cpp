@@ -1,16 +1,17 @@
-#include<iostream> using namespace std;
+#include<iostream> 
+using namespace std;
 int main()
 {
 	//2. binary operators : in which two operands are required
 		//a. arithematic operators : +,-,*,/, %(modulus)
 	int num1,num2,result;
-	printf("enter 2 values \n"); //  \n => next line
-	scanf("%d%d",&num1,&num2);// 27 4
+	cout<<"enter 2 values \n"; //  \n => next line
+	cin>>num1>>num2;// 27 4
 	
 	// result=num1+num2;
-	result=num1%num2; // 27%4 = 3
+	result=num1%num2; // 27%4 = 3     9%10 = ? 
 	// % (modulus or mod it is used to find remainder)
 	// remainder = divide waala shesh
-	printf("the result is %d \n",result);
+	cout<<"the result is "<<result;
 	return 0;
 }

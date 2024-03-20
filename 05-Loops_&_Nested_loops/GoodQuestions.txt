@@ -2,23 +2,43 @@
    let num=5  -> 5*4*3*2*1 = 120
 2. print fibonnaci series let n=10
     0 1 1 2 3 5 8 13 21 34 
-3. take a number from user and count how many digits are in that number eg.4589 -> 4
-4. take a number from user and count how many odd digits are in that number eg.45897 -> 3
-5. take a number from user and count how many even digits are in that number eg.4589 -> 2
-6. take a number from user and sum of the even digits in that number eg.4589 -> 12
-7. take a number from user and sum of the odd digits in that number eg.4589 -> 14
-8. take a ,n,d from user and print the A.P (arithematic progression)    
+3.check whether a no. is 3 digit armstrong or not i.e
+    153 = 1*1*1 + 5*5*5 + 3*3*3 => 153
+4. take a number from user and count how many digits are in that number eg.4589 -> 4
+5. take a number from user and count how many odd digits are in that number eg.45897 -> 3
+6. take a number from user and count how many even digits are in that number eg.4589 -> 2
+7. take a number from user and sum of the even digits in that number eg.4589 -> 12
+8. take a number from user and sum of the odd digits in that number eg.4589 -> 14
+9. take a ,n,d from user and print the A.P (arithematic progression)    
     let a=10  n=6 d=3
-    a  a+d  a+2d a+3d a+4d  a+5d
+    a  a+d  a+2d a+3d a+4d  a+5d . .
     10  13  16 19 22 25 Ans.
-9. take a number from user and check whether it is a prime number or not 
-    
-10.Take a number from user and count it's length and the sum of odd and even numbers present in that number then let these 2 results as first and second term and make fibonnaci series from them
-    till n(the length of that number) term.
+10. take a number from user and check whether it is a prime number or not.
+11.Take a number from user and count it's length and the sum of odd and even numbers 
+present in that number then let these 2 results as first and second term
+and make fibonnaci series from them till n(the length of that number) term.
     let num=321578        OddSum=16 evenSum=10  digitLen=6
     16 10 26 36 62 98 Ans.
-11.check whether a no. is 3 digit armstrong or not i.e
-    153 = 1*1*1 + 5*5*5 + 3*3*3 => 153
 12. reverse a number 1234 -> 4321
 13. check whether a no. is palindrome or not 
     i.e 12321 -> after reverse -> 12321
+14.Write a C program to print all the perfect numbers from 1 to 1000 eg. 28 => 1+2+4+7+14 =28
+15.Write a C program to find the greatest common divisor of two numbers.
+16.Write a C program to find the least common multiple of two numbers.
+
+
+Here's a list of loop-related questions on factors:
+
+for Loop Questions:
+Find and print all the factors of a given number using a for loop.
+Calculate the sum of the factors of a given number using a for loop.
+Implement prime factorization of a number using a for loop Print prime factors with exponents.
+while Loop Questions:
+Print the factors of a number in reverse order using a while loop.
+Calculate the product of the factors of a given number using a while loop.
+Count and print the number of factors of a given number using a while loop.
+
+do-while Loop Questions:
+Find the sum of all even factors of a number using a do-while loop.
+Display factors of a number within a specified range using a do-while loop.
+Find the factorial of a number using the product of its numbers with a do-while loop.

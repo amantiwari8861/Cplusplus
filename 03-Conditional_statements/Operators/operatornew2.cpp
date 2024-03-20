@@ -1,4 +1,5 @@
-#include<iostream> using namespace std;
+#include<iostream> 
+using namespace std;
 int main()
 {
 	//2. binary operators : in which two operands are required
@@ -21,9 +22,9 @@ int main()
 
 	//c.assignment operators ->    = , += ,-= , *= ,/=,%= etc.
 	// int num=20;
-	// num+30; // this will works ??
-	// num=num+30; 
-	// or
+	// // num+30; // this will works ??
+	// // num=num+30; 
+	// // or
 	// num+=30; //num =50
 	// printf("the num is %d \n",num);
 

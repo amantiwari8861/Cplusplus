@@ -1,17 +1,18 @@
-#include<iostream> using namespace std;
-// #include<windows.h>
+#include<iostream>
+#include<windows.h>
+using namespace std;
 int main()
 {
     
     // for (int i = 1; i <= 10; i++)
     // {
-    //     printf(" Chapter %d \n",i);
+    //     cout<<" Chapter "<<i<<endl;
     //     for (int j = 1; j <= 4; j++)
     //     {
-    //         printf("\tPara %d ",j);
-    //         // Sleep(1000);
+    //         cout<<"\tPara "<<j;
+    //         Sleep(1000);
     //     }
-    //     printf("\n");
+    //     cout<<"\n";
     // }
 
 
@@ -20,9 +21,9 @@ int main()
         for (int j = 1; j <= 5; j++)
         {
             // Sleep(1000);
-            printf("i=%d j=%d   ",i,j);
+            cout<<"i="<<i<<" j="<<j<<"   ";
         }
-        printf("\n");   
+        cout<<"\n";   
     }      
       
     return 0;

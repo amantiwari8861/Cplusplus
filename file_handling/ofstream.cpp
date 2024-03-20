@@ -29,7 +29,7 @@ int main()
     // Close the File
     fout.close();
     //it will run only after closing file using .close()
-    remove("Output.txt");//to delete a file
+    // remove("Output.txt");//to delete a file
     rename("Output.txt","Myfile.txt");
 
     return 0;

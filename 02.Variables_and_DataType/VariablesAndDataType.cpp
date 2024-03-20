@@ -48,7 +48,7 @@ int main()
     // cout<<" xy = "<<xy<<endl;
     // cout<<sizeof(long double)<<" Bytes"<<endl;
     
-    // cout<<sizeof(bool)<<" Bytes"<<endl;
+    // cout<<sizeof(bool)<<" Bit"<<endl;
 
     // bool isAlive=true;
     // cout<<" is Alive :"<<isAlive<<endl;
@@ -56,7 +56,7 @@ int main()
     string name,name2="Aman Tiwari";
     cout<<"enter ur name:";
     // cin>>name; // one word
-    getline(cin,name);
+    getline(cin,name);// whole sentence
 
     cout<<"my name is "<<name<<endl;
     cout<<"my name is "<<name2<<endl;

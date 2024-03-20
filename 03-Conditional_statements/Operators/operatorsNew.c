@@ -1,4 +1,5 @@
-#include<iostream> using namespace std;
+#include<iostream> 
+using namespace std;
 int main()
 {
 	//2. binary operators : in which two operands are required

@@ -1,18 +1,16 @@
 #include<iostream> 
 using namespace std;
 void add();//fxn declaration 
+
 int main(/* arguments(parameters) */)//starting point of program
 {
     cout<<"before calling in main \n";
-    add();//calling of fxn
-    add();//calling of fxn
-    add();//calling of fxn
     add();//calling of fxn
     cout<<"after calling in main \n";
     return 0;//ending point of program
 }
 //user defined fxn
-void add(/*parameter*/)
+void add(/*arguments*/)
 {   //body open
     cout<<"hii i am adding something\n";// code
     //void is fxn return type
@@ -36,3 +34,12 @@ void add(/*parameter*/)
 //modularity (independent to each other)
 //increase readibility
 //decreases complexity
+
+
+
+// declare that we are caters
+// call/hire a particular catering person
+// their own techniques
+
+
+

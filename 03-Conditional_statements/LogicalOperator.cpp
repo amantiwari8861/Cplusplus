@@ -1,21 +1,22 @@
-#include<iostream> using namespace std;
+#include<iostream> 
+using namespace std;
 
 int main()
 {
     //&& || !
     int marks;
-    printf("enter ur marks :");
-    scanf("%d",&marks);
+    cout<<"enter ur marks :";
+    cin>>marks;
 
     // if (marks>=80)
     // {
-    //     printf("A grade !");
+    //     cout<<"A grade !";
     // }
     
     
     // if(marks>=80 || marks<=100)
     // {
-    //     printf("A grade !"); 
+    //     cout<<"A grade !"; 
     // }
     /*case 1: marks=45
     45>=80  || 45<=100
@@ -31,10 +32,10 @@ int main()
     1
     */
 
-    if(marks>=80 && marks<=100)
-    {
-        printf("A grade !"); 
-    }
+    // if(marks>=80 && marks<=100)
+    // {
+    //     cout<<"A grade !"; 
+    // }
     /*
     case 1: marks=45
     45>=80  && 45<=100
@@ -51,11 +52,11 @@ int main()
     */
     // if(!(marks>=80 && marks<=100))
     // {
-    //     printf("A grade !"); 
+    //     cout<<"A grade !"; 
     // }
     // else
     // {
-    //     printf("fail");
+    //     cout<<"fail";
     // }
     
     // 85

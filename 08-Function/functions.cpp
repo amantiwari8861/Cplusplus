@@ -8,23 +8,26 @@ int main(/*parameters*/)
     //  A function definition provides the actual body of the function.
     //  The C standard library provides numerous built-in functions that your program can call.
 
-    int num=5;
-    float result=pow(num,4);//625
-    cout<<" %f ",pow(5,3);
+    // int num=5;
+    // float result=pow(num,4);//625
+    // cout<<pow(5,3)<<endl;
+    // cout<<pow(2,3)<<endl;
+    // cout<<pow(3,3)<<endl;
+    // cout<<pow(2,7)<<endl;
     // float result=pow(2.5,2);//625
-    float result=sqrt(625);//25
-    float result=log(2);//0.69 //base e
-    float result=log10(2);//base 10 
-    float result=log2(2);//base 2
+    // float result=sqrt(625);//25
+    // float result=log(2);//0.69 //base e
+    // float result=log10(2);//base 10 
+    // float result=log2(2);//base 2
     // // 90Deg = 90 * pi/180 => 1.5708 Radian
-    float result=sin(1.5708);// value given in radian
-    float result=sinh(1);
-    float result=abs(-56);
-    float result=floor(3.999);//3  downward rounding
-    float result=ceil(3.000002);//4 upward rounding
-    cout<<"the result is "<<result;
+    // float result=sin(1.5708);// value given in radian
+    // float result=sinh(1);
+    // float result=abs(-56);
+    // float result=floor(3.999);//3  downward rounding
+    // float result=ceil(3.000002);//4 upward rounding
+    // cout<<"the result is "<<result;
 
-    // cout<<"%lf",M_PI);
+    cout<<M_PI;
     // printf("\n%05d",1);
     // printf("\n%05d",10);
     // printf("\n%05d",100);

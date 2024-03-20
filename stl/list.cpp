@@ -18,10 +18,23 @@ int main()
     friends.sort();
 
     cout<<"All friends \n";
-    for (string fri:friends)
-    {
-        cout<<fri<<endl;
-    }
+    // for(auto itr=friends.begin();itr!=friends.end();itr++)
+    // {
+    //     cout<<*itr<<endl;
+    // }
+    // for (string fri:friends)
+    // {
+    //     cout<<fri<<endl;
+    // }
+    // for (auto fri:friends)
+    // {
+    //     cout<<fri<<endl;
+    // }
+    // list<int> mylist={1,2,3,4};
+    // for (auto e:mylist)
+    // {
+    //     cout<<e<<endl;
+    // }
 
     return 0;
 }

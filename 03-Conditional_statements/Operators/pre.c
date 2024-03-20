@@ -5,11 +5,12 @@ int main()
     // int num=10;
     // int res=++num;// 10+1 => 11
     // printf(" %d \n",res);// pre-fix or pre-increment
-    // printf("%d \n",res);
+    // printf(" %d \n",num);
 
-    int num=10;
-    printf(" %d \n",num++);// post-fix or post-increment 
-    printf("%d \n",num);
+    // int num=10;
+    // int res=num++;
+    // printf(" %d \n",res);// post-fix or post-increment 
+    // printf(" %d \n",num);
 
     // int a=10;
     // int b=a++;
@@ -17,10 +18,10 @@ int main()
     // printf("a= %d \n",a);
     // printf("b= %d \n",b);
 
-    // int x = 4, y, z;
-    // y = --x;
-    // z = x--;
-    // printf("%d, %d, %d\n", x, y, z);
+    int x = 4, y, z;
+    y = --x;
+    z = x--;
+    printf("%d, %d, %d\n", x, y, z);
 
     return 0;
 }

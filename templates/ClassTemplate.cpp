@@ -21,8 +21,8 @@ class ClassName
 		//class = typename
 int main()  
 { 
-   ClassName<char, char> obj('h','g'); 
    ClassName<int, double> obj2(5,6.78); 
+   ClassName<char, char> obj('h','g'); 
    ClassName<int, char> obj3(5,'A'); 
    return 0; 
 }

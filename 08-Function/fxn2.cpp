@@ -14,6 +14,6 @@ int main()
 }
 void add(int a,int num2)//variable name may be same or different
 {
-    int sum=a+num2;
+    int sum=a+num2;//local variable
     cout<<"the sum is "<<sum<<" in add fxn \n";    
 }
