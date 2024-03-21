@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 #include "myheaderfile.h"
 
 int main()
 {
-  printf("in main fxn num2 = %d \n", num2);
+  cout<<"in main fxn num2 = "<<num2<<endl;
   myfunc();
 
-  printf("the result is : %d \n", add(10, 20));
+  cout<<"the result is : "<< add(10, 20);
 
   return 0;
 }

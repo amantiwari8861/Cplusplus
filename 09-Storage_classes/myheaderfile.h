@@ -4,7 +4,7 @@
 
 void myfunc()
 {
-    printf("in headerfile the value of num2 = %d \n",num2);
+    cout<<"in headerfile the value of num2 = "<<num2<<endl;
 }
 int add(int a,int b)
 {
